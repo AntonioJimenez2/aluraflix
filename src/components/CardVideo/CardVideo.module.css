@@ -1,0 +1,28 @@
+.contenedor_card {
+  width: 420px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  border: 5px solid #6bd1ff;
+}
+
+.imagen_video {
+  width: 430px;
+}
+
+.contenedor_opciones {
+  width: 420px;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.borrar_editar {
+  display: flex;
+  gap: 10px;
+}

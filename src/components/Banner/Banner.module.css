@@ -1,0 +1,11 @@
+.contenedor {
+  background-image: url("./banner-home.png");
+  background-position: center;
+  background-size: cover;
+  height: 832px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  
+}
