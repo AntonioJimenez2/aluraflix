@@ -1,9 +1,14 @@
+import Formulario from "./components/Formulario";
 import styles from "./NuevoVideo.module.css";
+import TituloNuevoVideo from "./components/TituloNuevoVideo";
 
 const NuevoVideo = () => {
   return (
     <>
-      <h1>Pagina nuevo video aqui</h1>
+      <main className={styles.contenedor_principal} >
+        <TituloNuevoVideo />
+        <Formulario />
+      </main>
     </>
   );
 };

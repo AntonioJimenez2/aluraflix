@@ -1,6 +1,7 @@
 import styles from "./Home.module.css";
-import Banner from "../../components/Banner";
-import ContenedorCards from "../../components/ContenedorCards/";
+import Banner from "./components/Banner";
+import ContenedorCards from "./components/ContenedorCards";
+
 
 const Home = () => {
   return (

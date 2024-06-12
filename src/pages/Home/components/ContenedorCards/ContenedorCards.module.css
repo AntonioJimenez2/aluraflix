@@ -1,10 +1,12 @@
 .contenedor {
   margin: 0;
+  padding: 0 35px;
 }
 
 .contenedor_cards {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   height: 435px;
   gap: 20px;
   overflow-x: auto;

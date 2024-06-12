@@ -3,7 +3,7 @@ import styles from "./VideoDestacado.module.css";
 const VideoDestacado = () => {
   return (
     <>
-      <iframe
+      <iframe className={styles.contenedor_video}
         width="648"
         height="334"
         src="https://www.youtube.com/embed/KSyqCUAr2CU?si=QbzCMGpGzQefEOKL"

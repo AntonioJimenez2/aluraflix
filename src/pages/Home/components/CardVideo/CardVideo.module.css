@@ -6,10 +6,17 @@
   align-items: center;
   border-radius: 15px;
   border: 5px solid #6bd1ff;
+  cursor: pointer;
+}
+
+.contenedor_card:hover{
+  transform: scale(1.02);
 }
 
 .imagen_video {
-  width: 430px;
+  max-width: 100%;
+  max-height: 265px;
+  object-fit: cover;
 }
 
 .contenedor_opciones {
@@ -17,12 +24,19 @@
   height: 60px;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+
   background-color: #000000;
   color: #ffffff;
+  border-radius: 0 0 15px 15px;
 }
 
 .borrar_editar {
   display: flex;
+  align-items: center;
   gap: 10px;
+}
+
+.iconos{
+  width: 25px;
+  height: 28px;
 }

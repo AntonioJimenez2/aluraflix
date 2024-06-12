@@ -1,0 +1,20 @@
+.contenedor_titulo {
+  text-align: center;
+  color: #ffffff;
+}
+
+.contenedor_titulo h2 {
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 70px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.contenedor_titulo p {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.44px;
+  text-align: center;
+}
