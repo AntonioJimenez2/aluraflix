@@ -1,4 +1,5 @@
 .contenedor_categorias {
+  width: 40%;
 }
 
 .contenedor_categorias label {
@@ -14,5 +15,14 @@
 .contenedor_categorias select {
   font-family: "Source Sans 3", sans-serif;
   height: 62px;
-  width: 800px;
+  width: 100%;
+  border: 3px solid #262626;
+  background: transparent;
+
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  color: #A5A5A5;
 }

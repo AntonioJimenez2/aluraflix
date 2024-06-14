@@ -1,16 +1,20 @@
 import styles from "./Cabecera.module.css";
 import logo from "./alura-logo.png";
-import Boton from "../Boton";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Cabecera = () => {
+  const location= useLocation();
+
+  const estiloBtnhome = location.pathname === "/" ? `${styles.boton_activo}` : `${styles.boton_inactivo}`
+  const estiloBtnNuevo = location.pathname === "/nuevo-video" ? `${styles.boton_activo}` : `${styles.boton_inactivo}`
+
   return (
     <>
       <div className={styles.contenedor}>
         <img className={styles.logo} src={logo} alt="logo alura" />
         <nav>
-          <Link to="/" > <Boton>HOME</Boton> </Link>
-          <Link to="/nuevo-video" > <Boton>NUEVO VÍDEO</Boton> </Link>
+          <Link to="/" className={estiloBtnhome}>HOME</Link>
+          <Link to="/nuevo-video" className={estiloBtnNuevo}>NUEVO VIDEO </Link>
         </nav>
       </div>
     </>

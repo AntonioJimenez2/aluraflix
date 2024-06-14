@@ -1,4 +1,11 @@
-.boton{
-    width: 180px;
-    height: 54px;
+.boton_activo{
+    width: 180.13px;
+height: 54px;
+gap: 0px;
+border-radius: 10px;
+border: 2px solid #2271D1 ;
+opacity: 0px;
+color: red;
+
+    
 }

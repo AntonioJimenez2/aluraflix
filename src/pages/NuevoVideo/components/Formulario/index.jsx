@@ -3,11 +3,11 @@ import styles from "./Formulario.module.css";
 import ListaOpciones from "../ListaOpciones/";
 import TextArea from "../TextArea/";
 
-const Formulario = () => {
+const Formulario = (props) => {
   return (
     <>
       <section className={styles.contenedor_formulario}>
-        <h3>Crear Tarjeta</h3>
+        <h3>{props.titulo}</h3>
         <form>
           <CampoFormulario
             titulo="Titulo"
@@ -32,9 +32,10 @@ const Formulario = () => {
           />
           <ListaOpciones />
           <TextArea />
-
+          
           <CampoFormulario type="submit" value="GUARDAR" />
           <CampoFormulario type="reset" value="LIMPIAR" />
+          
         </form>
       </section>
     </>

@@ -7,7 +7,7 @@ const NuevoVideo = () => {
     <>
       <main className={styles.contenedor_principal} >
         <TituloNuevoVideo />
-        <Formulario />
+        <Formulario titulo="Crear Tarjeta" />
       </main>
     </>
   );

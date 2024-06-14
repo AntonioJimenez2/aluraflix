@@ -1,6 +1,6 @@
 .contenedor_descripcion {
   display: block;
-  width: 800px;
+  width: 60%;
 }
 
 .contenedor_descripcion label {
@@ -17,5 +17,15 @@
   display: inline;
   font-family: "Source Sans 3", sans-serif;
   height: 200px;
-  width: 600px;
+  width: 100%;
+  resize: none;
+  border: 3px solid #262626;
+  background: transparent;
+
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  color: #A5A5A5;
 }

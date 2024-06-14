@@ -1,21 +1,24 @@
 .contenedor_formulario {
   font-family: "Source Sans 3", sans-serif;
-  height: 867px;
-  width: 850px;
+  height: 800px;
+  width: 90%;
   padding: 0 50px;
 }
 
 .contenedor_formulario h3 {
-  font-family: "Source Sans 3", sans-serif;
+ 
   font-size: 36px;
   font-weight: 600;
   line-height: 24px;
   text-align: left;
   border-top: 3px solid #262626;
   border-bottom: 3px solid #262626;
+  padding: 20px;
 }
 
 .contenedor_formulario form {
   display: flex;
+  
   flex-wrap: wrap;
+  gap: 20px;
 }

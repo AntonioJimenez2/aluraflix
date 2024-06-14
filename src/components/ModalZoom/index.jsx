@@ -4,10 +4,12 @@ import Formulario from "../../pages/NuevoVideo/components/Formulario/"
 const ModalZoom = () => {
   return (
     <>
-      <dialog open={true}>
-        <Formulario />
-        <form method="dialog">
-          <button>OK</button>
+      <dialog className={styles.contenedor_modal} open={true}>
+          <Formulario titulo="EDITAR CARD"/>
+        
+        <form className={styles.contenedor_boton} method="dialog">
+          
+          <button><img src="/img/cancel.png" alt="cancelar" /></button>
         </form>
       </dialog>
     </>
