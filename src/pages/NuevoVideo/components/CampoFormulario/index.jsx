@@ -1,17 +1,20 @@
-import styles from "./CampoFormulario.module.css"
+import styles from "./CampoFormulario.module.css";
 
-const CampoFormulario = (props) => {
-    return (
-        <>
-        <label for={props.name}>{props.titulo} </label>
-        <input 
-        id={props.name} 
-        type={props.type} 
-        placeholder={props.placeholder}>
+const CampoFormulario = props => {
+  return (
+    <>
+      <div className={styles.campo_formulario}>
+        <label htmlFor={props.name}>{props.titulo} </label>
+        <input
+          id={props.name}
+          type={props.type}
+          placeholder={props.placeholder}
+          value={props.value}
+          required={props.required}
+        />
+      </div>
+    </>
+  );
+};
 
-        </input>
-        </>
-    )
-}
-
-export default CampoFormulario
+export default CampoFormulario;

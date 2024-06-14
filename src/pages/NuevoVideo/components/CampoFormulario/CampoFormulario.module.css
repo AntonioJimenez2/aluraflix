@@ -1,0 +1,29 @@
+.campo_formulario {
+}
+
+.campo_formulario label {
+  display: block;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  margin: 15px 0;
+}
+
+.campo_formulario input {
+  font-family: "Source Sans 3", sans-serif;
+  height: 62px;
+  width: 800px;
+}
+
+.campo_formulario input[type="submit"] {
+  width: 180px;
+  height: 54px;
+  margin-right: 10px;
+}
+
+.campo_formulario input[type="reset"] {
+  width: 180px;
+  height: 54px;
+}

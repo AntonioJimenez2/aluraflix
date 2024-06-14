@@ -1,4 +1,6 @@
-.contenedor_principal{
-    background-color: #262626;
-    padding: 50px 0;
+.contenedor_principal {
+  font-family: "Source Sans 3", sans-serif;
+  background-color: #161616;
+  padding: 50px 0;
+  color: #ffffff;
 }

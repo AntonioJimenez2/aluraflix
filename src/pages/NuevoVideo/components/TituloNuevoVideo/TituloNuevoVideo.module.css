@@ -4,17 +4,21 @@
 }
 
 .contenedor_titulo h2 {
+  font-family: "Roboto", sans-serif;
   font-size: 60px;
   font-weight: 900;
-  line-height: 70px;
+  line-height: 70.31px;
   margin-top: 0;
+  text-align: center;
   margin-bottom: 25px;
+  color: #f5f5f5;
 }
 
 .contenedor_titulo p {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 23.44px;
   text-align: center;
+  color: #ffffff;
 }

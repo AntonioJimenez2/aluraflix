@@ -1,5 +1,5 @@
 import styles from "./Pie.module.css";
-import logo from "./alura-logo.png";
+import logo from "../../assets/img/logo_black.png";
 
 const Pie = () => {
   return (
