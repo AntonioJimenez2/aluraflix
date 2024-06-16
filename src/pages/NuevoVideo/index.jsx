@@ -5,7 +5,7 @@ import TituloNuevoVideo from "./components/TituloNuevoVideo";
 const NuevoVideo = () => {
   return (
     <>
-      <main className={styles.contenedor_principal} >
+      <main className={styles.contenedor_principal}>
         <TituloNuevoVideo />
         <Formulario titulo="Crear Tarjeta" />
       </main>

@@ -1,0 +1,44 @@
+{
+  "videos": [
+    {
+      "id": 1,
+      "titulo": "Conoce el canal de Alura Latam",
+      "descripcion": "Les damos la bienvenida al canal de Alura Latam. Aquí encontrarás contenido de diversos temas relacionados con la tecnología como programación, ciencia de datos y más.",
+      "imagen_url": "https://i.ytimg.com/vi/1iJ5lof5kLM/maxresdefault.jpg",
+      "video_url": "https://www.youtube.com/embed/1iJ5lof5kLM",
+      "categoria": "Introducción"
+    },
+    {
+      "id": 2,
+      "titulo": "Webinar 'Mujeres en Tecnología'",
+      "descripcion": "Conversamos con mujeres talentosas e inspiradoras sobre sus experiencias en el mercado de tecnología.",
+      "imagen_url": "https://i.ytimg.com/vi/9Yik6SD6l8M/maxresdefault.jpg",
+      "video_url": "https://www.youtube.com/embed/9Yik6SD6l8M",
+      "categoria": "Webinar"
+    },
+    {
+      "id": 3,
+      "titulo": "Conversor de Moneda con Java | Alura Challenge",
+      "descripcion": "Aplicación que convierte en base al peso mexicano, un desafío de Oracle Next Education + Alura Latam.",
+      "imagen_url": "https://i.ytimg.com/vi/4nH2Jz8-bh0/maxresdefault.jpg",
+      "video_url": "https://www.youtube.com/embed/4nH2Jz8-bh0",
+      "categoria": "Programación"
+    },
+    {
+      "id": 4,
+      "titulo": "[Inmersión Datos] Aprende tu primer código Python",
+      "descripcion": "Aprende a programar en Python con este curso introductorio.",
+      "imagen_url": "https://i.ytimg.com/vi/8IIMLL-Z9bg/maxresdefault.jpg",
+      "video_url": "https://www.youtube.com/embed/8IIMLL-Z9bg",
+      "categoria": "Ciencia de Datos"
+    },
+    {
+      "id": 5,
+      "titulo": "Git y GitHub para Principiantes",
+      "descripcion": "Curso básico sobre cómo utilizar Git y GitHub para el control de versiones.",
+      "imagen_url": "https://i.ytimg.com/vi/-LmFK6skG7s/maxresdefault.jpg",
+      "video_url": "https://www.youtube.com/embed/-LmFK6skG7s",
+      "categoria": "Programación"
+    }
+  ]
+}

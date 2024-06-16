@@ -1,4 +1,4 @@
-import styles from "./ContenedorCards.module.css"
+import styles from "./ContenedorCards.module.css";
 import TituloCategoria from "../TituloCategoria/";
 import CardVideo from "../CardVideo/";
 

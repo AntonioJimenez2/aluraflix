@@ -6,7 +6,6 @@
 }
 
 .contenedor_formulario h3 {
- 
   font-size: 36px;
   font-weight: 600;
   line-height: 24px;
@@ -18,7 +17,7 @@
 
 .contenedor_formulario form {
   display: flex;
-  
+
   flex-wrap: wrap;
   gap: 20px;
 }

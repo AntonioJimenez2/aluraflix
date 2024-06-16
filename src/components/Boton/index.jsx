@@ -1,6 +1,6 @@
 import styles from "./Boton.module.css";
 
-const Boton = props => {
+const Boton = (props) => {
   return (
     <>
       <button className={styles.boton_activo}>{props.children} </button>
