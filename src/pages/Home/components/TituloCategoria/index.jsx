@@ -1,10 +1,13 @@
 import styles from "./TituloCategoria.module.css";
 
-const TituloCategoria = () => {
+const TituloCategoria = (props) => {
+
+
+  
   return (
     <>
-      <div className={styles.titulo_categoria}>
-        <h2>Front End</h2>
+      <div className={styles.titulo_categoria} style={{backgroundColor: props.color}} >
+        <h2> {props.titulo} </h2>
       </div>
     </>
   );

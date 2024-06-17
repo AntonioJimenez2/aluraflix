@@ -2,15 +2,19 @@ import styles from "./ContenedorCards.module.css";
 import TituloCategoria from "../TituloCategoria/";
 import CardVideo from "../CardVideo/";
 
-const ContenedorCards = () => {
+const ContenedorCards = (props) => {
+
+  console.log(props.datos)
+  const {titulo, color} = props.datos
+
   return (
     <>
       <section className={styles.contenedor}>
-        <TituloCategoria />
+        <TituloCategoria titulo={titulo} color={color} />
         <section className={styles.contenedor_cards}>
-          <CardVideo />
-          <CardVideo />
-          <CardVideo />
+          <CardVideo color={color} />
+          <CardVideo color={color} />
+          <CardVideo color={color} />
         </section>
       </section>
     </>

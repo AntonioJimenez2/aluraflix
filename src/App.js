@@ -4,10 +4,14 @@ import Home from "./pages/Home";
 import NuevoVideo from "./pages/NuevoVideo";
 import Pie from "./components/Pie";
 import ModalZoom from "./components/ModalZoom/";
+import GlobalContextProvider from "./context/GlobalContext";
 
 function App() {
   return (
     <>
+    <GlobalContextProvider>
+
+    
       <BrowserRouter>
         <Cabecera />
         <Routes>
@@ -17,6 +21,7 @@ function App() {
         <Pie />
         <ModalZoom />
       </BrowserRouter>
+      </GlobalContextProvider>
     </>
   );
 }
