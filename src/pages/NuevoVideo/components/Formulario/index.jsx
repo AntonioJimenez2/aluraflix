@@ -4,14 +4,14 @@ import ListaOpciones from "../ListaOpciones/";
 import TextArea from "../TextArea/";
 import { useState } from "react";
 
-const Formulario = (props) => {
+const Formulario = props => {
   const [titulo, actualizarTitulo] = useState("");
   const [imagen, actualizarImagen] = useState("");
   const [video, actualizarVideo] = useState("");
   const [descripcion, actualizarDescripcion] = useState("");
   const [categoria, actualizarCategoria] = useState("");
 
-  const manejarEnvio = (e) => {
+  const manejarEnvio = e => {
     e.preventDefault();
     console.log("Manejar envio");
     let datosAEnviar = {
@@ -19,7 +19,7 @@ const Formulario = (props) => {
       imagen,
       video,
       descripcion,
-      categoria,
+      categoria
     };
     console.log(datosAEnviar);
   };
@@ -70,8 +70,8 @@ const Formulario = (props) => {
             actualizarValor={actualizarDescripcion}
           />
 
-          <CampoFormulario type="submit" value="GUARDAR" />
-          <CampoFormulario type="reset" value="LIMPIAR" />
+          <CampoFormulario type="submit" valor="GUARDAR" />
+          <CampoFormulario type="reset" valor="LIMPIAR" />
         </form>
       </section>
     </>
