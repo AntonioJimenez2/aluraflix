@@ -1,18 +1,19 @@
 import styles from "./VideoDestacado.module.css";
 
-const VideoDestacado = () => {
+const VideoDestacado = (props) => {
   return (
     <>
       <iframe
         className={styles.contenedor_video}
         width="648"
         height="334"
-        src="https://www.youtube.com/embed/KSyqCUAr2CU?si=QbzCMGpGzQefEOKL"
+        src={props.video}
         title="YouTube video player"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerPolicy="strict-origin-when-cross-origin"
         allowFullScreen
+        style={{ borderColor: props.color }}
       ></iframe>
     </>
   );

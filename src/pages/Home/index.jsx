@@ -1,8 +1,13 @@
+import { useContext } from "react";
 import styles from "./Home.module.css";
 import Banner from "./components/Banner";
 import ContenedorCards from "./components/ContenedorCards";
+import { GlobalContext } from "../../context/GlobalContext";
 
 const Home = () => {
+  //videos
+  const { videos } = useContext(GlobalContext);
+
   // lista categorias
   const categorias = [
     {
@@ -25,7 +30,12 @@ const Home = () => {
         <Banner />
 
         {categorias.map((categoria, index) => (
-          <ContenedorCards datos={categoria} key={index} />
+          <ContenedorCards 
+          datos={categoria} 
+          key={index} 
+          
+          
+          />
         ))}
 
       </main>
