@@ -7,6 +7,9 @@ const GlobalContextProvider = ({ children }) => {
   // abrir y cerrar modal
   const [abrirModal, setAbrirModal] = useState(false);
 
+  //url de api de videos
+  const urlApi = "http://localhost:5000/videos/";
+
   //arreglo de videos api
   const [videos, setVideos] = useState([]);
 
@@ -15,7 +18,7 @@ const GlobalContextProvider = ({ children }) => {
   useEffect(() => {
     const getVideos = async () => {
       try {
-        const respuesta = await fetch("http://localhost:5000/videos");
+        const respuesta = await fetch(urlApi);
         const videos = await respuesta.json();
         setVideos(videos);
       } catch (error) {
@@ -35,7 +38,7 @@ const GlobalContextProvider = ({ children }) => {
     imagen_url: "https://i.ytimg.com/vi/1iJ5lof5kLM/maxresdefault.jpg",
     video_url: "https://www.youtube.com/embed/1iJ5lof5kLM",
     categoria: "Introducción",
-    color: "#121212",
+    color: "#121212"
   });
 
   return (
@@ -47,6 +50,7 @@ const GlobalContextProvider = ({ children }) => {
         setVideos,
         videoSeleccionado,
         setVideoSeleccionado,
+        urlApi
       }}
     >
       {children}

@@ -4,31 +4,37 @@ import icono_editar from "./icono_editar.png";
 import { useContext } from "react";
 import { GlobalContext } from "../../../../context/GlobalContext";
 
-const CardVideo = (props) => {
-  const { setAbrirModal, setVideoSeleccionado, videos, setVideos } = useContext(GlobalContext);
+const CardVideo = props => {
+  const { setAbrirModal, setVideoSeleccionado, videos, setVideos, urlApi } =
+    useContext(GlobalContext);
   //se añade el color al objeto video
   props.datos.color = props.color;
   const videoClicado = props.datos;
 
-// funcion eliminar video
+  // funcion eliminar video
 
-const eliminarVideo = (id) => {
-  console.log("video eliminado id: ", id)
-  fetch(`http://localhost:5000/videos/${id}`, {
-    method: "DELETE",
-    headers: {
-      "Content-Type":
-      "application/json"
-    }
-  })
-  .then(()=>{
-    const videosActualizados = videos.filter(video => video.id != id)
-    setVideos(videosActualizados)
-  })
-  
-
-}
-  
+  const eliminarVideo = id => {
+    console.log("video eliminado id: ", id);
+    fetch(`${urlApi}${id}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json"
+      }
+    })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("La solicitud de eliminación de video falló");
+        }
+        return response.json();
+      })
+      .then(() => {
+        const videosActualizados = videos.filter(video => video.id !== id);
+        setVideos(videosActualizados);
+      })
+      .catch(error => {
+        console.error("Error al eliminar el video:", error);
+      });
+  };
 
   return (
     <>
@@ -47,7 +53,10 @@ const eliminarVideo = (id) => {
           className={styles.contenedor_opciones}
           style={{ borderColor: props.color }}
         >
-          <span className={styles.borrar_editar} onClick={()=>eliminarVideo(props.datos.id)}>
+          <span
+            className={styles.borrar_editar}
+            onClick={() => eliminarVideo(props.datos.id)}
+          >
             <img
               className={styles.iconos}
               src={icono_borrar}
