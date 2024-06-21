@@ -3,11 +3,11 @@ import styles from "./Home.module.css";
 import Banner from "./components/Banner";
 import ContenedorCards from "./components/ContenedorCards";
 import { GlobalContext } from "../../context/GlobalContext";
-import ModalZoom from "../../components/ModalZoom";
+import ModalEditar from "../../components/ModalEditar";
 
 const Home = () => {
   //videos
-  const { videos } = useContext(GlobalContext);
+  const { abrirModal, formRef } = useContext(GlobalContext);
 
   // lista categorias
   const categorias = [
@@ -29,12 +29,12 @@ const Home = () => {
     <>
       <main className={styles.contenedor_principal}>
         <Banner />
-
-        {categorias.map((categoria, index) => (
-          <ContenedorCards datos={categoria} key={index} />
-        ))}
-
-        <ModalZoom />
+        <div ref={formRef}>
+          {categorias.map((categoria, index) => (
+            <ContenedorCards datos={categoria} key={index} />
+          ))}
+        </div>
+        <div>{abrirModal && <ModalEditar />}</div>
       </main>
     </>
   );

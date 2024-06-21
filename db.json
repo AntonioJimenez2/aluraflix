@@ -1,58 +1,26 @@
 {
   "videos": [
     {
-      "id": "2",
-      "titulo": "Webinar 'Mujeres en Tecnología'",
-      "descripcion": "Conversamos con mujeres talentosas e inspiradoras sobre sus experiencias en el mercado de tecnología.",
-      "imagen_url": "https://i.ytimg.com/vi/9Yik6SD6l8M/maxresdefault.jpg",
-      "video_url": "https://www.youtube.com/embed/9Yik6SD6l8M",
-      "categoria": "Innovación y gestión"
-    },
-    {
       "id": "4",
-      "titulo": "[Inmersión Datos] Aprende tu primer código Python",
-      "descripcion": "Aprende a programar en Python con este curso introductorio.",
+      "titulo": "[Inmersión Datos] Aprende tu primer código Python Ahora",
       "imagen_url": "https://i.ytimg.com/vi/8IIMLL-Z9bg/maxresdefault.jpg",
       "video_url": "https://www.youtube.com/embed/8IIMLL-Z9bg",
+      "descripcion": "Aprende a programar en Python con este curso introductorio.",
       "categoria": "Frontend"
     },
     {
       "id": "5",
       "titulo": "Git y GitHub para Principiantes",
-      "descripcion": "Curso básico sobre cómo utilizar Git y GitHub para el control de versiones.",
       "imagen_url": "https://i.ytimg.com/vi/-LmFK6skG7s/maxresdefault.jpg",
       "video_url": "https://www.youtube.com/embed/-LmFK6skG7s",
-      "categoria": "Innovación y gestión"
-    },
-    {
-      "id": "8ff3",
-      "titulo": "desafios de fron end",
-      "imagen_url": "http://fewfwef",
-      "video_url": "http://fsefsefse",
-      "descripcion": "prueba backend",
-      "categoria": "Backend"
-    },
-    {
-      "id": "5fb7",
-      "titulo": "Nuevo video",
-      "imagen_url": "http://fewfwef",
-      "video_url": "http://fsefsefse",
-      "descripcion": "prueba console",
-      "categoria": "Innovación y gestión"
-    },
-    {
-      "id": "2f62",
-      "titulo": "Nuevo video",
-      "imagen_url": "http://fewfwef",
-      "video_url": "http://fsefsefse",
-      "descripcion": "prueba console",
+      "descripcion": "Curso básico sobre cómo utilizar Git y GitHub para el control de versiones.",
       "categoria": "Innovación y gestión"
     },
     {
       "id": "2642",
       "titulo": "Especialidad BACKEND | RESUMEN SEMANA 1 - 3 | Oracle Next Education + Alura Latam",
       "imagen_url": "https://i.ytimg.com/vi/b71kWley8-o/maxresdefault.jpg",
-      "video_url": "https://www.youtube.com/watch?v=b71kWley8-o",
+      "video_url": "https://www.youtube.com/embed/b71kWley8-o",
       "descripcion": "Resumen de las semanas 1 a 3 de la especialización en Backend.",
       "categoria": "Backend"
     },
@@ -66,7 +34,7 @@
     },
     {
       "id": "4430",
-      "titulo": "Portfolio - Desafío Alura Latam - Front End",
+      "titulo": "Portfolio - Desafío Alura Latam - Front End 2",
       "imagen_url": "https://i.ytimg.com/vi/_oat8cSlSbY/maxresdefault.jpg",
       "video_url": "https://www.youtube.com/embed/_oat8cSlSbY",
       "descripcion": "Presentación de un portfolio como parte del desafío de frontend.",
@@ -86,14 +54,6 @@
       "imagen_url": "https://i.ytimg.com/vi/00_36HIaicA/maxresdefault.jpg",
       "video_url": "https://www.youtube.com/embed/00_36HIaicA",
       "descripcion": "Curso sobre cómo conectar frontend y backend utilizando Spring Boot.",
-      "categoria": "Backend"
-    },
-    {
-      "id": "98bc",
-      "titulo": "Prueba de regreso a home",
-      "imagen_url": "https://www.ffcdfcc.com/dfjg.png",
-      "video_url": "http://jdjdhjfjfh",
-      "descripcion": "Fhdfhg",
       "categoria": "Backend"
     }
   ]

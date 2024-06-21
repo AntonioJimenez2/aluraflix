@@ -3,7 +3,6 @@ import Cabecera from "./components/Cabecera";
 import Home from "./pages/Home";
 import NuevoVideo from "./pages/NuevoVideo";
 import Pie from "./components/Pie";
-import ModalZoom from "./components/ModalZoom/";
 import GlobalContextProvider from "./context/GlobalContext";
 import FormularioContextProvider from "./context/FormularioContext";
 

@@ -1,9 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { createContext } from "react";
 
 export const GlobalContext = createContext();
 
 const GlobalContextProvider = ({ children }) => {
+  //referencia al video y formulario editar
+  const videoRef = useRef(null)
+  const formRef = useRef(null)
+
   // abrir y cerrar modal
   const [abrirModal, setAbrirModal] = useState(false);
 
@@ -12,6 +16,9 @@ const GlobalContextProvider = ({ children }) => {
 
   //arreglo de videos api
   const [videos, setVideos] = useState([]);
+
+  //actualizador de los videos al editar alguno
+  const [actualizadorVideos, setActualizadorVideos] = useState(false)
 
   //llamada a la api
 
@@ -27,7 +34,7 @@ const GlobalContextProvider = ({ children }) => {
     };
 
     getVideos();
-  }, []); //ejecutar solo al inicio
+  }, [actualizadorVideos]); //ejecutar al inicio y al editarse un video
 
   //Video seleccionado
   const [videoSeleccionado, setVideoSeleccionado] = useState({
@@ -51,6 +58,10 @@ const GlobalContextProvider = ({ children }) => {
         videoSeleccionado,
         setVideoSeleccionado,
         urlApi,
+        actualizadorVideos,
+        setActualizadorVideos,
+        videoRef, 
+        formRef
       }}
     >
       {children}
