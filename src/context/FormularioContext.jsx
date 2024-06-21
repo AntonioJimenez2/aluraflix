@@ -13,7 +13,8 @@ const FormularioContextProvider = ({ children }) => {
 
   const { urlApi, videos, setVideos } = useContext(GlobalContext);
 
-  const manejarEnvio = (e) => {
+  //recibir datos de video nuevo y enviarlo
+  const manejarEnvio = e => {
     e.preventDefault();
     console.log("Manejar envio");
     let nuevoVideo = {
@@ -21,7 +22,7 @@ const FormularioContextProvider = ({ children }) => {
       imagen_url: imagen,
       video_url: video,
       descripcion,
-      categoria,
+      categoria
     };
     console.log(nuevoVideo);
     enviarVideo(urlApi, nuevoVideo);
@@ -33,7 +34,7 @@ const FormularioContextProvider = ({ children }) => {
       const conexion = await fetch(urlApi, {
         method: "POST",
         headers: { "Content-type": "application/json" },
-        body: JSON.stringify(video),
+        body: JSON.stringify(video)
       });
 
       if (!conexion.ok) {
@@ -45,6 +46,7 @@ const FormularioContextProvider = ({ children }) => {
       console.log(nuevoVideo);
       setVideos([...videos, nuevoVideo]);
       alLimpiar();
+
       return nuevoVideo;
     } catch (error) {
       console.error("Error en la solicitud:", error);
@@ -75,7 +77,7 @@ const FormularioContextProvider = ({ children }) => {
         categoria,
         actualizarCategoria,
         manejarEnvio,
-        alLimpiar,
+        alLimpiar
       }}
     >
       {children}

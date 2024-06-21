@@ -87,6 +87,14 @@
       "video_url": "https://www.youtube.com/embed/00_36HIaicA",
       "descripcion": "Curso sobre cómo conectar frontend y backend utilizando Spring Boot.",
       "categoria": "Backend"
+    },
+    {
+      "id": "98bc",
+      "titulo": "Prueba de regreso a home",
+      "imagen_url": "https://www.ffcdfcc.com/dfjg.png",
+      "video_url": "http://jdjdhjfjfh",
+      "descripcion": "Fhdfhg",
+      "categoria": "Backend"
     }
   ]
 }
