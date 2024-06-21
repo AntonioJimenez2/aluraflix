@@ -27,7 +27,7 @@ const GlobalContextProvider = ({ children }) => {
     };
 
     getVideos();
-  }, []); // Array vacío indica que el efecto se ejecuta solo una vez al montar el componente
+  }, []); //ejecutar solo al inicio
 
   //Video seleccionado
   const [videoSeleccionado, setVideoSeleccionado] = useState({
@@ -38,7 +38,7 @@ const GlobalContextProvider = ({ children }) => {
     imagen_url: "https://i.ytimg.com/vi/1iJ5lof5kLM/maxresdefault.jpg",
     video_url: "https://www.youtube.com/embed/1iJ5lof5kLM",
     categoria: "Introducción",
-    color: "#121212"
+    color: "#121212",
   });
 
   return (
@@ -50,7 +50,7 @@ const GlobalContextProvider = ({ children }) => {
         setVideos,
         videoSeleccionado,
         setVideoSeleccionado,
-        urlApi
+        urlApi,
       }}
     >
       {children}

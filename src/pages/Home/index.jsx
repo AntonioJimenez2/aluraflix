@@ -3,6 +3,7 @@ import styles from "./Home.module.css";
 import Banner from "./components/Banner";
 import ContenedorCards from "./components/ContenedorCards";
 import { GlobalContext } from "../../context/GlobalContext";
+import ModalZoom from "../../components/ModalZoom";
 
 const Home = () => {
   //videos
@@ -12,16 +13,16 @@ const Home = () => {
   const categorias = [
     {
       titulo: "Frontend",
-      color: "#6BD1FF"
+      color: "#6BD1FF",
     },
     {
       titulo: "Backend",
-      color: "#00C86F"
+      color: "#00C86F",
     },
     {
       titulo: "Innovación y gestión",
-      color: "#FFBA05"
-    }
+      color: "#FFBA05",
+    },
   ];
 
   return (
@@ -30,14 +31,10 @@ const Home = () => {
         <Banner />
 
         {categorias.map((categoria, index) => (
-          <ContenedorCards 
-          datos={categoria} 
-          key={index} 
-          
-          
-          />
+          <ContenedorCards datos={categoria} key={index} />
         ))}
 
+        <ModalZoom />
       </main>
     </>
   );

@@ -5,22 +5,22 @@ import NuevoVideo from "./pages/NuevoVideo";
 import Pie from "./components/Pie";
 import ModalZoom from "./components/ModalZoom/";
 import GlobalContextProvider from "./context/GlobalContext";
+import FormularioContextProvider from "./context/FormularioContext";
 
 function App() {
   return (
     <>
-    <GlobalContextProvider>
-
-    
-      <BrowserRouter>
-        <Cabecera />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/nuevo-video" element={<NuevoVideo />} />
-        </Routes>
-        <Pie />
-        <ModalZoom />
-      </BrowserRouter>
+      <GlobalContextProvider>
+        <FormularioContextProvider>
+          <BrowserRouter>
+            <Cabecera />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/nuevo-video" element={<NuevoVideo />} />
+            </Routes>
+            <Pie />
+          </BrowserRouter>
+        </FormularioContextProvider>
       </GlobalContextProvider>
     </>
   );

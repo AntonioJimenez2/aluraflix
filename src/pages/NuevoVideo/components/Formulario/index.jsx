@@ -2,33 +2,47 @@ import CampoFormulario from "../CampoFormulario";
 import styles from "./Formulario.module.css";
 import ListaOpciones from "../ListaOpciones/";
 import TextArea from "../TextArea/";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { FormularioContext } from "../../../../context/FormularioContext";
 
-const Formulario = props => {
-  const [titulo, actualizarTitulo] = useState("");
+const Formulario = (props) => {
+  /* const [titulo, actualizarTitulo] = useState("");
   const [imagen, actualizarImagen] = useState("");
   const [video, actualizarVideo] = useState("");
   const [descripcion, actualizarDescripcion] = useState("");
-  const [categoria, actualizarCategoria] = useState("");
+  const [categoria, actualizarCategoria] = useState(""); */
 
-  const manejarEnvio = e => {
+  const {
+    titulo,
+    actualizarTitulo,
+    imagen,
+    actualizarImagen,
+    video,
+    actualizarVideo,
+    descripcion,
+    actualizarDescripcion,
+    categoria,
+    actualizarCategoria,
+  } = useContext(FormularioContext);
+
+  /* const manejarEnvio = e => {
     e.preventDefault();
     console.log("Manejar envio");
     let datosAEnviar = {
       titulo,
-      imagen,
-      video,
+      imagen_url: imagen,
+      video_url: video,
       descripcion,
       categoria
     };
     console.log(datosAEnviar);
-  };
+  }; */
 
   return (
     <>
       <section className={styles.contenedor_formulario}>
         <h3>{props.titulo}</h3>
-        <form onSubmit={manejarEnvio}>
+        <form onSubmit={props.manejarEnvio} onReset={props.alLimpiar}>
           <CampoFormulario
             titulo="Titulo"
             placeholder="Ingrese el titulo..."
