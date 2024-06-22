@@ -1,6 +1,9 @@
 .contenedor_video {
   border: 5px solid;
   border-radius: 15px;
+  box-sizing: border-box;
+  width: 550px;
+  height: 300px;
 }
 
 /* Tablet: entre 600px y 1024px */
@@ -13,8 +16,8 @@
   /* Tus estilos para celulares aquí */
   .contenedor_video {
     width: 100%;
-    height: auto;
-    margin: 0;
+    height: 300px;
     padding: 0;
+    margin: 30px 0;
   }
 }

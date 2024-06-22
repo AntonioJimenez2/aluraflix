@@ -10,13 +10,19 @@ const FormularioContextProvider = ({ children }) => {
   const [video, actualizarVideo] = useState("");
   const [descripcion, actualizarDescripcion] = useState("");
   const [categoria, actualizarCategoria] = useState("");
-  const [idParaEditar, setIdParaEditar] = useState("")
-  
+  const [idParaEditar, setIdParaEditar] = useState("");
 
-  const { urlApi, videos, setVideos, setAbrirModal, actualizadorVideos, setActualizadorVideos } = useContext(GlobalContext);
+  const {
+    urlApi,
+    videos,
+    setVideos,
+    setAbrirModal,
+    actualizadorVideos,
+    setActualizadorVideos,
+  } = useContext(GlobalContext);
 
   //recibir datos de video nuevo y enviarlo
-  const manejarEnvio = e => {
+  const manejarEnvio = (e) => {
     e.preventDefault();
     console.log("Manejar envio");
     let nuevoVideo = {
@@ -24,7 +30,7 @@ const FormularioContextProvider = ({ children }) => {
       imagen_url: imagen,
       video_url: video,
       descripcion,
-      categoria
+      categoria,
     };
     console.log(nuevoVideo);
     enviarVideo(urlApi, nuevoVideo);
@@ -36,7 +42,7 @@ const FormularioContextProvider = ({ children }) => {
       const conexion = await fetch(urlApi, {
         method: "POST",
         headers: { "Content-type": "application/json" },
-        body: JSON.stringify(videoASubir)
+        body: JSON.stringify(videoASubir),
       });
 
       if (!conexion.ok) {
@@ -75,9 +81,8 @@ const FormularioContextProvider = ({ children }) => {
     actualizarVideo(video.video_url);
   };
 
-
   //enviar video editado
-  const manejarEdicion = e => {
+  const manejarEdicion = (e) => {
     e.preventDefault();
     console.log("Manejar edicion");
     let videoEditado = {
@@ -86,39 +91,34 @@ const FormularioContextProvider = ({ children }) => {
       imagen_url: imagen,
       video_url: video,
       descripcion,
-      categoria
+      categoria,
     };
     console.log(videoEditado);
     editarVideo(idParaEditar, urlApi, videoEditado);
   };
 
-
   //editar video a la api
   async function editarVideo(id, urlApi, videoSeleccionado) {
     const response = await fetch(`${urlApi}${id}`, {
-        method: 'PUT',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(videoSeleccionado)
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(videoSeleccionado),
     });
 
     if (!response.ok) {
-        throw new Error('Error al actualizar el producto');
+      throw new Error("Error al actualizar el producto");
     }
 
     const videoEditado = await response.json();
-    setActualizadorVideos(!actualizadorVideos) //error duplica el video editado
-      alLimpiar();
-      setAbrirModal(false)
+    setActualizadorVideos(!actualizadorVideos); //error duplica el video editado
+    alLimpiar();
+    setAbrirModal(false);
 
-
-    console.log("video editado con exito", videoEditado)
+    console.log("video editado con exito", videoEditado);
     return videoEditado;
-}
-
-
-
+  }
 
   return (
     <FormularioContext.Provider
@@ -137,7 +137,7 @@ const FormularioContextProvider = ({ children }) => {
         alLimpiar,
         videoAEditar,
         setIdParaEditar,
-        manejarEdicion
+        manejarEdicion,
       }}
     >
       {children}

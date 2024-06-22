@@ -22,3 +22,27 @@
   text-align: center;
   color: #ffffff;
 }
+
+
+/* Tablet: entre 600px y 1024px */
+@media (min-width: 600px) and (max-width: 1024px) {
+  /* Tus estilos para tablet aquí */
+}
+
+/* Mobile: hasta 600px */
+@media (max-width: 600px) {
+  /* Tus estilos para celulares aquí */
+ .contenedor_titulo h2{
+  font-size: 40px;
+  line-height: 46.88px;
+  
+ }
+
+ .contenedor_titulo p{
+font-size: 15px;
+line-height: 17.58px;
+margin: 0 20px;
+
+ }
+  
+}

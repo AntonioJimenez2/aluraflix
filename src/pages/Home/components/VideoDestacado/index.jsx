@@ -3,10 +3,10 @@ import styles from "./VideoDestacado.module.css";
 const VideoDestacado = (props) => {
   return (
     <>
+    
       <iframe
         className={styles.contenedor_video}
-        width="648"
-        height="334"
+        
         src={props.video}
         title="YouTube video player"
         frameBorder="0"
@@ -15,6 +15,7 @@ const VideoDestacado = (props) => {
         allowFullScreen
         style={{ borderColor: props.color }}
       ></iframe>
+      
     </>
   );
 };

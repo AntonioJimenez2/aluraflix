@@ -4,16 +4,19 @@
   background-size: cover;
   height: 832px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   color: #ffffff;
   padding: 0 35px;
+  gap: 30px;
 }
 
-.box {
-  flex-grow: 1;
-  max-width: 50%;
+.box_titulos {
+  flex-grow: 2;
+}
+
+.box_video{
+  flex-grow: 1.75;
 }
 
 /* Tablet: entre 600px y 1024px */
@@ -25,7 +28,8 @@
 @media (max-width: 600px) {
   /* Tus estilos para celulares aquí */
   .contenedor {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    width: 100%;
     height: auto;
     justify-content: center;
     align-items: center;
@@ -33,10 +37,15 @@
     padding: 0;
     margin: 0;
     background-image: none;
+    gap: 0;
   }
 
-  .box {
+  .box_titulos, .box_video {
     padding: 0;
     margin: 0;
+    max-width: 100%;
+    width: 100%;
+    flex-grow: 1;
+   
   }
 }

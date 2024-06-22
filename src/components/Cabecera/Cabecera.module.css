@@ -69,7 +69,16 @@
 
   .contenedor {
     position: fixed;
+    justify-content: center;
     bottom: 0;
     left: 0;
+    height: 100px;
+    background-color: #000000;
+    border-top: 4px solid #2271d1;
+    border-bottom: none;
+  }
+
+  .logo{
+    display: none;
   }
 }

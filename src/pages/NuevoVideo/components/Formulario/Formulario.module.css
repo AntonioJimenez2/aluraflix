@@ -1,7 +1,6 @@
 .contenedor_formulario {
   font-family: "Source Sans 3", sans-serif;
   height: 800px;
-  width: 90%;
   padding: 0 50px;
 }
 
@@ -20,4 +19,33 @@
 
   flex-wrap: wrap;
   gap: 20px;
+}
+
+/* Tablet: entre 600px y 1024px */
+@media (min-width: 600px) and (max-width: 1024px) {
+  /* Tus estilos para tablet aquí */
+}
+
+/* Mobile: hasta 600px */
+@media (max-width: 600px) {
+  /* Tus estilos para celulares aquí */
+.contenedor_formulario{
+  height: 100%;
+  padding: 0 20px;
+}
+
+.contenedor_formulario form{
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.contenedor_formulario form div{
+  width: 100%;
+}
+
+.contenedor_formulario form div:nth-last-child(-n + 2){
+  width: 180px;
+  margin: 0 auto;
+}
+
 }

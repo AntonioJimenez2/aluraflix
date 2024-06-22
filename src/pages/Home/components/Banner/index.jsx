@@ -21,16 +21,16 @@ const Banner = () => {
   return (
     <>
       <div className={styles.contenedor} ref={videoRef}>
-        <div className={styles.box}  >
+        <div className={styles.box_titulos}  >
           <TituloCategoria categoria={categoria} color={color} />
           <TituloYDescripcion titulo={titulo} descripcion={descripcion} />
         </div>
-        <div >
+        <div className={styles.box_video}>
         <VideoDestacado
           
           video={video_url}
           color={color}
-          className={styles.box}
+          
         /></div>
       </div>
     </>
