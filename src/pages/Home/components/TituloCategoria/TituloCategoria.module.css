@@ -1,10 +1,23 @@
 .titulo_categoria {
   width: 432px;
   height: 70px;
-  
+
   border-radius: 15px;
   text-align: center;
   align-content: center;
   color: #ffffff;
   margin: 40px 0;
+}
+
+/* Tablet: entre 600px y 1024px */
+@media (min-width: 600px) and (max-width: 1024px) {
+  /* Tus estilos para tablet aquí */
+}
+
+/* Mobile: hasta 600px */
+@media (max-width: 600px) {
+  /* Tus estilos para celulares aquí */
+
+  .titulo_categoria {
+  }
 }

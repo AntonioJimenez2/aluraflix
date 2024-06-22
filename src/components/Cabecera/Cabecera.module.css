@@ -57,3 +57,19 @@
   font-weight: 900;
   line-height: 24px;
 }
+
+/* Tablet: entre 600px y 1024px */
+@media (min-width: 600px) and (max-width: 1024px) {
+  /* Tus estilos para tablet aquí */
+}
+
+/* Mobile: hasta 600px */
+@media (max-width: 600px) {
+  /* Tus estilos para celulares aquí */
+
+  .contenedor {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+}

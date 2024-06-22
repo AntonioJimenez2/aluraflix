@@ -4,7 +4,7 @@
   background-size: cover;
   height: 832px;
   display: flex;
-
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   color: #ffffff;
@@ -14,4 +14,29 @@
 .box {
   flex-grow: 1;
   max-width: 50%;
+}
+
+/* Tablet: entre 600px y 1024px */
+@media (min-width: 600px) and (max-width: 1024px) {
+  /* Tus estilos para tablet aquí */
+}
+
+/* Mobile: hasta 600px */
+@media (max-width: 600px) {
+  /* Tus estilos para celulares aquí */
+  .contenedor {
+    flex-direction: column-reverse;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 0;
+    margin: 0;
+    background-image: none;
+  }
+
+  .box {
+    padding: 0;
+    margin: 0;
+  }
 }
