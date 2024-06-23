@@ -5,9 +5,16 @@ import { useContext } from "react";
 import { GlobalContext } from "../../../../context/GlobalContext";
 import { FormularioContext } from "../../../../context/FormularioContext";
 
-const CardVideo = (props) => {
-  const { setAbrirModal, setVideoSeleccionado, videos, setVideos, urlApi, videoRef, formRef } =
-    useContext(GlobalContext);
+const CardVideo = props => {
+  const {
+    setAbrirModal,
+    setVideoSeleccionado,
+    videos,
+    setVideos,
+    urlApi,
+    videoRef,
+    formRef
+  } = useContext(GlobalContext);
 
   const { videoAEditar, setIdParaEditar } = useContext(FormularioContext);
 
@@ -17,25 +24,25 @@ const CardVideo = (props) => {
 
   // funcion eliminar video
 
-  const eliminarVideo = (id) => {
+  const eliminarVideo = id => {
     console.log("video eliminado id: ", id);
     fetch(`${urlApi}${id}`, {
       method: "DELETE",
       headers: {
-        "Content-Type": "application/json",
-      },
+        "Content-Type": "application/json"
+      }
     })
-      .then((response) => {
+      .then(response => {
         if (!response.ok) {
           throw new Error("La solicitud de eliminación de video falló");
         }
         return response.json();
       })
       .then(() => {
-        const videosActualizados = videos.filter((video) => video.id !== id);
+        const videosActualizados = videos.filter(video => video.id !== id);
         setVideos(videosActualizados);
       })
-      .catch((error) => {
+      .catch(error => {
         console.error("Error al eliminar el video:", error);
       });
   };
@@ -44,24 +51,21 @@ const CardVideo = (props) => {
   const alEditar = () => {
     setAbrirModal(true);
     videoAEditar(videoClicado);
-    setIdParaEditar(videoClicado.id)
+    setIdParaEditar(videoClicado.id);
 
     window.scrollTo({
-      top:
-      formRef.current.offsetTop,
+      top: formRef.current.offsetTop,
       behavior: "smooth"
-    })
+    });
   };
 
   const clickEnImagen = () => {
-     setVideoSeleccionado(videoClicado)
+    setVideoSeleccionado(videoClicado);
     window.scrollTo({
-      top:
-      videoRef.current.offsetTop,
+      top: videoRef.current.offsetTop,
       behavior: "smooth"
-    })
-   
-  }
+    });
+  };
 
   return (
     <>
@@ -70,12 +74,14 @@ const CardVideo = (props) => {
         style={{ borderColor: props.color }}
         data-index={props.datos.id}
       >
-        <img
-          className={styles.imagen_video}
-          src={props.datos.imagen_url}
-          alt="portada card"
-          onClick={() => clickEnImagen() }
-        />
+        <div className={styles.contenedor_imagen}>
+          <img
+            className={styles.imagen_video}
+            src={props.datos.imagen_url}
+            alt="portada card"
+            onClick={() => clickEnImagen()}
+          />
+        </div>
         <div
           className={styles.contenedor_opciones}
           style={{ borderColor: props.color }}

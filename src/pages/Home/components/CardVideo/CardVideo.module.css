@@ -13,11 +13,21 @@
   transform: scale(1.02);
 }
 
+.contenedor_imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 235px;
+}
+
 .imagen_video {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 11px 11px 0 0;
+  text-align: center;
+  object-position: center;
 }
 
 .contenedor_opciones {
@@ -43,7 +53,6 @@
   height: 28px;
 }
 
-
 /* Tablet: entre 600px y 1024px */
 @media (min-width: 600px) and (max-width: 1024px) {
   /* Tus estilos para tablet aquí */
@@ -52,14 +61,15 @@
 /* Mobile: hasta 600px */
 @media (max-width: 600px) {
   /* Tus estilos para celulares aquí */
-.contenedor_card{
-  width: 370px;
-  height: auto;
-}
+  .contenedor_card {
+    width: 350px;
+    height: auto;
+  }
 
-.contenedor_opciones{
-  width: 370px;
-}
+  .contenedor_imagen {
+  }
 
-
+  .contenedor_opciones {
+    width: 350px;
+  }
 }

@@ -8,15 +8,16 @@
   align-items: center;
   color: #ffffff;
   padding: 0 35px;
-  gap: 30px;
+  gap: 50px;
 }
 
 .box_titulos {
-  flex-grow: 2;
+  flex-grow: 1;
+  max-width: 55%;
 }
 
-.box_video{
-  flex-grow: 1.75;
+.box_video {
+  flex-grow: 1;
 }
 
 /* Tablet: entre 600px y 1024px */
@@ -40,12 +41,12 @@
     gap: 0;
   }
 
-  .box_titulos, .box_video {
+  .box_titulos,
+  .box_video {
     padding: 0;
     margin: 0;
     max-width: 100%;
     width: 100%;
     flex-grow: 1;
-   
   }
 }
