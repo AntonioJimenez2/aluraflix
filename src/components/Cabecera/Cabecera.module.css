@@ -21,12 +21,16 @@
   gap: 25px;
 }
 
+.iconos_nav{
+  display: none;
+}
+
 .boton_activo {
   width: 180.13px;
   height: 54px;
   border-radius: 10px;
   border: 2px solid #2271d1;
-  color: #ffffff;
+  color: #2271d1;
   background-color: #000000;
   box-shadow: 0px 0px 12px 4px #2271d1 inset;
 
@@ -77,8 +81,44 @@
     border-top: 4px solid #2271d1;
     border-bottom: none;
   }
+  
+  .contenedor nav{
+    gap: 50px;
+    justify-content: center;
+  }
 
   .logo{
     display: none;
+  }
+
+  .iconos_nav{
+    display: inline;
+  }
+
+  .boton_inactivo span{
+    display: none;
+  }
+
+  .boton_activo img{
+    height: 30px;
+  }
+
+  .boton_activo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: #2271D13D;
+    box-shadow: none;
+    border-radius: 50px;
+    width: auto;
+    padding: 5px 20px;
+    text-decoration: none;
+
+  }
+
+  .boton_inactivo{
+      border: none;
+      width: 40px;
   }
 }

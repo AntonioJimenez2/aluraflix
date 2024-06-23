@@ -13,16 +13,42 @@
 
 .box_titulos {
   flex-grow: 1;
-  max-width: 55%;
+  max-width: 500px;
+  flex-shrink: 1;
+}
+
+.box_titulos div:first-child{
+  width: 296px;
+  height: 92px;
 }
 
 .box_video {
   flex-grow: 1;
+  max-width: 700px;
+  flex-shrink: 1;
+}
+
+.box_video iframe{
+  width: 100%;
 }
 
 /* Tablet: entre 600px y 1024px */
 @media (min-width: 600px) and (max-width: 1024px) {
   /* Tus estilos para tablet aquí */
+.box_titulos {
+  width: 35%;
+}
+
+.box_titulos div:first-child{
+  width: 282px;
+}
+
+.box_video iframe{
+  width: 100%;
+  height: 215px;
+}
+
+
 }
 
 /* Mobile: hasta 600px */

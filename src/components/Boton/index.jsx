@@ -3,7 +3,7 @@ import styles from "./Boton.module.css";
 const Boton = (props) => {
   return (
     <>
-      <button className={styles.boton_activo}>{props.children} </button>
+      <button className={props.clase } >{props.children}</button>
     </>
   );
 };

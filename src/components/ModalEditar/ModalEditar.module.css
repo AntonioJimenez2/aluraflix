@@ -85,6 +85,12 @@
 /* Tablet: entre 600px y 1024px */
 @media (min-width: 600px) and (max-width: 1024px) {
   /* Tus estilos para tablet aquí */
+
+  .contenedor_modal{
+    width: 90%;
+    padding: 40px 25px;
+  }
+
 }
 
 /* Mobile: hasta 600px */
