@@ -20,14 +20,14 @@ const Cabecera = () => {
       <div className={styles.contenedor}>
         <img className={styles.logo} src={logo} alt="logo alura" />
         <nav>
-          <Link to="/" >
+          <Link to="/" className={styles.enlaces} >
           <Boton clase={estiloBtnhome} >
           <img className={styles.iconos_nav} src={ location.pathname === "/" ? "/img/home_activo.png" : "/img/home_inactivo.png"} alt="icono home" />
             <span>HOME</span>
           </Boton>
            
           </Link>
-          <Link to="/nuevo-video">
+          <Link to="/nuevo-video" className={styles.enlaces} >
           <Boton clase={estiloBtnNuevo} >
           <img className={styles.iconos_nav} src={ location.pathname === "/nuevo-video" ? "/img/nuevo_activo.png" : "/img/nuevo_inactivo.png"} alt="icono nuevo video" />
              <span>NUEVO VIDEO</span>

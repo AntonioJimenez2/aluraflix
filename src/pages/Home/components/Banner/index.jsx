@@ -14,8 +14,10 @@ const Banner = () => {
     color = "#00C86F";
   } else if (categoria === "Frontend") {
     color = "#6BD1FF";
-  } else {
+  } else if (categoria === "Innovación y gestión") {
     color = "#FFBA05";
+  } else {
+    color = "#2271d1"
   }
 
   return (

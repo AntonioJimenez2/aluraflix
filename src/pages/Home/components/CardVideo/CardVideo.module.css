@@ -6,12 +6,10 @@
   align-items: center;
   border-radius: 15px;
   border: 5px solid #6bd1ff;
-  cursor: pointer;
+ 
 }
 
-.contenedor_card:hover {
-  transform: scale(1.02);
-}
+
 
 .contenedor_imagen {
   display: flex;
@@ -19,6 +17,9 @@
   align-items: center;
   width: 100%;
   height: 235px;
+  overflow: hidden;
+  border-radius: 9px 9px 0 0;
+  cursor: pointer;
 }
 
 .imagen_video {
@@ -28,6 +29,10 @@
   border-radius: 11px 11px 0 0;
   text-align: center;
   object-position: center;
+}
+
+.imagen_video:hover{
+  transform: scale(1.02);
 }
 
 .contenedor_opciones {
@@ -46,6 +51,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
 }
 
 .iconos {
@@ -54,12 +60,12 @@
 }
 
 /* Tablet: entre 600px y 1024px */
-@media (min-width: 600px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   /* Tus estilos para tablet aquí */
 }
 
 /* Mobile: hasta 600px */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   /* Tus estilos para celulares aquí */
   .contenedor_card {
     width: 350px;

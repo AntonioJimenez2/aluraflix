@@ -9,6 +9,7 @@
   padding: 0 50px;
   box-sizing: border-box;
   box-shadow: 0px 5px 29px 0px #2271d1b2;
+  z-index: 30;
 }
 
 .logo {
@@ -23,6 +24,10 @@
 
 .iconos_nav{
   display: none;
+}
+
+.enlaces{
+  text-decoration: none;
 }
 
 .boton_activo {
@@ -63,12 +68,12 @@
 }
 
 /* Tablet: entre 600px y 1024px */
-@media (min-width: 600px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   /* Tus estilos para tablet aquí */
 }
 
 /* Mobile: hasta 600px */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   /* Tus estilos para celulares aquí */
 
   .contenedor {
@@ -80,11 +85,16 @@
     background-color: #000000;
     border-top: 4px solid #2271d1;
     border-bottom: none;
+    padding: 0;
   }
   
   .contenedor nav{
     gap: 50px;
     justify-content: center;
+  }
+
+  .contenedor nav Link{
+    text-decoration: none;
   }
 
   .logo{
@@ -105,7 +115,7 @@
 
   .boton_activo{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 20px;
     background: #2271D13D;

@@ -55,6 +55,38 @@
       "video_url": "https://www.youtube.com/embed/00_36HIaicA",
       "descripcion": "Curso sobre cómo conectar frontend y backend utilizando Spring Boot.",
       "categoria": "Backend"
+    },
+    {
+      "id": "e518",
+      "titulo": "Entendiendo la importancia de Linkedin #AluraTips",
+      "imagen_url": "https://i.ytimg.com/vi/N9vxfMJEyYg/maxresdefault.jpg",
+      "video_url": "https://www.youtube.com/embed/N9vxfMJEyYg",
+      "descripcion": "¿Ya tienes un perfil en Linkedin? ¿Sabes cuál es la importancia en tenerlo? En el video de hoy vamos a hablar de la importancia de la rede social laboral más grande del mundo.",
+      "categoria": "Innovación y gestión"
+    },
+    {
+      "id": "0cab",
+      "titulo": "Desafíos y soluciones del trabajo remoto #AluraTips",
+      "imagen_url": "https://i.ytimg.com/vi/kIvnVfnmDyE/maxresdefault.jpg",
+      "video_url": "https://www.youtube.com/embed/kIvnVfnmDyE",
+      "descripcion": "En el video de hoy vamos a ver cuáles son los desafíos y las soluciones que las empresas y los colaboradores enfrentan con el trabajo remoto.",
+      "categoria": "Innovación y gestión"
+    },
+    {
+      "id": "4581",
+      "titulo": "Simplificando el Back End #AluraTips",
+      "imagen_url": "https://i.ytimg.com/vi/XuSXJ9DUcvY/maxresdefault.jpg",
+      "video_url": "https://www.youtube.com/embed/XuSXJ9DUcvY",
+      "descripcion": "¿Quieres conocer y entender mejor qué es el Back End? En este video Bismarck Berrios nos explica qué es el back end de una manera sencilla.",
+      "categoria": "Backend"
+    },
+    {
+      "id": "ddd1",
+      "titulo": "¿Sabes qué es NodeJS? #AluraTips",
+      "imagen_url": "https://i.ytimg.com/vi/o8x_n4Px1N0/maxresdefault.jpg",
+      "video_url": "https://www.youtube.com/embed/o8x_n4Px1N0",
+      "descripcion": "¿Es un lenguaje de programación? ¿Es un ambiente de desarrollo? ¿Una herramienta? En este video nuestro instructor, Leonardo Castillo, nos explica qué es NodeJS y para qué sirve.",
+      "categoria": "Backend"
     }
   ]
 }

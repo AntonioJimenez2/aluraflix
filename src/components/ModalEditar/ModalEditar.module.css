@@ -45,15 +45,15 @@
   width: 40%;
 }
 
-.contenedor_modal input {
+.contenedor_modal section form div input {
   border: 3px solid #2271d1;
 }
 
-.contenedor_modal select {
+.contenedor_modal section form div select {
   border: 3px solid #2271d1;
 }
 
-.contenedor_modal textarea {
+.contenedor_modal section form div textarea {
   height: 90px;
   border: 3px solid #2271d1;
 }
@@ -83,7 +83,7 @@
 
 
 /* Tablet: entre 600px y 1024px */
-@media (min-width: 600px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   /* Tus estilos para tablet aquí */
 
   .contenedor_modal{
@@ -94,7 +94,7 @@
 }
 
 /* Mobile: hasta 600px */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   /* Tus estilos para celulares aquí */
   .contenedor_modal{
     width: 90%;
