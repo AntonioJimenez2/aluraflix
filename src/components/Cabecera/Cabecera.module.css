@@ -47,6 +47,7 @@
   font-size: 20px;
   font-weight: 900;
   line-height: 24px;
+  cursor: pointer;
 }
 
 .boton_inactivo {
@@ -65,6 +66,7 @@
   font-size: 20px;
   font-weight: 900;
   line-height: 24px;
+  cursor: pointer;
 }
 
 /* Tablet: entre 600px y 1024px */
