@@ -92,6 +92,7 @@ text-align: left;
     margin: 0;
     background-image: none;
     gap: 0;
+    margin-top: 40px;
   }
 
   .box_titulos,
@@ -102,4 +103,10 @@ text-align: left;
     width: 100%;
     flex-grow: 1;
   }
+
+  .box_titulos div:first-child{
+    width: 90%;
+  margin: auto;
+  }
+
 }

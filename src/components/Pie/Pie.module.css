@@ -19,8 +19,10 @@
 /* Mobile: hasta 600px */
 @media (max-width: 768px) {
   /* Tus estilos para celulares aquí */
+
   .pie{
     display: none;
   }
-}
 
+
+}
