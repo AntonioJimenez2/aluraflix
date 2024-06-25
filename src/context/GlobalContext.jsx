@@ -12,7 +12,7 @@ const GlobalContextProvider = ({ children }) => {
   const [abrirModal, setAbrirModal] = useState(false);
 
   //url de api de videos
-  const urlApi = "http://localhost:5000/videos/";
+  const urlApi = "https://fake-api-flame-gamma.vercel.app/videos/";
 
   //arreglo de videos api
   const [videos, setVideos] = useState([]);

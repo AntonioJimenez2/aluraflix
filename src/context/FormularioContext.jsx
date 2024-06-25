@@ -87,11 +87,11 @@ const FormularioContextProvider = ({ children }) => {
     console.log("Manejar edicion");
     let videoEditado = {
       id: idParaEditar,
-      titulo,
+      titulo: titulo,
       imagen_url: imagen,
       video_url: video,
-      descripcion,
-      categoria,
+      descripcion: descripcion,
+      categoria: categoria,
     };
     console.log(videoEditado);
     editarVideo(idParaEditar, urlApi, videoEditado);
@@ -99,6 +99,7 @@ const FormularioContextProvider = ({ children }) => {
 
   //editar video a la api
   async function editarVideo(id, urlApi, videoSeleccionado) {
+    
     const response = await fetch(`${urlApi}${id}`, {
       method: "PUT",
       headers: {
@@ -112,13 +113,15 @@ const FormularioContextProvider = ({ children }) => {
     }
 
     const videoEditado = await response.json();
-    setActualizadorVideos(!actualizadorVideos); //error duplica el video editado
+    setActualizadorVideos(!actualizadorVideos); 
     alLimpiar();
     setAbrirModal(false);
 
     console.log("video editado con exito", videoEditado);
     return videoEditado;
+  
   }
+
 
   return (
     <FormularioContext.Provider
