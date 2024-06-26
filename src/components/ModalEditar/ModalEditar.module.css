@@ -51,6 +51,7 @@
 
 .contenedor_modal section form div select {
   border: 3px solid #2271d1;
+  background-color: #03122f;
 }
 
 .contenedor_modal section form div textarea {

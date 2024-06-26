@@ -20,6 +20,22 @@ const GlobalContextProvider = ({ children }) => {
   //actualizador de los videos al editar alguno
   const [actualizadorVideos, setActualizadorVideos] = useState(false)
 
+  // lista categorias
+  const categorias = [
+    {
+      titulo: "Frontend",
+      color: "#6BD1FF",
+    },
+    {
+      titulo: "Backend",
+      color: "#00C86F",
+    },
+    {
+      titulo: "Innovación y gestión",
+      color: "#FFBA05",
+    },
+  ];
+
   //llamada a la api
 
   useEffect(() => {
@@ -61,7 +77,8 @@ const GlobalContextProvider = ({ children }) => {
         actualizadorVideos,
         setActualizadorVideos,
         videoRef, 
-        formRef
+        formRef,
+        categorias
       }}
     >
       {children}

@@ -47,11 +47,19 @@
   border-top: 5px solid;
 }
 
-.borrar_editar {
+.borrar_card, .editar_card {
   display: flex;
   align-items: center;
   gap: 10px;
   cursor: pointer;
+}
+
+.borrar_card:hover{
+  color: #ff0000;
+}
+
+.editar_card:hover{
+  color: #00ff00;
 }
 
 .iconos {

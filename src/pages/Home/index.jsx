@@ -7,23 +7,9 @@ import ModalEditar from "../../components/ModalEditar";
 
 const Home = () => {
   //videos
-  const { abrirModal, formRef } = useContext(GlobalContext);
+  const { abrirModal, formRef, categorias } = useContext(GlobalContext);
 
-  // lista categorias
-  const categorias = [
-    {
-      titulo: "Frontend",
-      color: "#6BD1FF",
-    },
-    {
-      titulo: "Backend",
-      color: "#00C86F",
-    },
-    {
-      titulo: "Innovación y gestión",
-      color: "#FFBA05",
-    },
-  ];
+  
 
   return (
     <>

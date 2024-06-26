@@ -2,15 +2,11 @@ import CampoFormulario from "../CampoFormulario";
 import styles from "./Formulario.module.css";
 import ListaOpciones from "../ListaOpciones/";
 import TextArea from "../TextArea/";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { FormularioContext } from "../../../../context/FormularioContext";
 
 const Formulario = (props) => {
-  /* const [titulo, actualizarTitulo] = useState("");
-  const [imagen, actualizarImagen] = useState("");
-  const [video, actualizarVideo] = useState("");
-  const [descripcion, actualizarDescripcion] = useState("");
-  const [categoria, actualizarCategoria] = useState(""); */
+  
 
   const {
     titulo,
@@ -25,18 +21,6 @@ const Formulario = (props) => {
     actualizarCategoria,
   } = useContext(FormularioContext);
 
-  /* const manejarEnvio = e => {
-    e.preventDefault();
-    console.log("Manejar envio");
-    let datosAEnviar = {
-      titulo,
-      imagen_url: imagen,
-      video_url: video,
-      descripcion,
-      categoria
-    };
-    console.log(datosAEnviar);
-  }; */
 
   return (
     <>

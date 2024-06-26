@@ -87,7 +87,7 @@ const CardVideo = props => {
           style={{ borderColor: props.color }}
         >
           <span
-            className={styles.borrar_editar}
+            className={styles.borrar_card}
             onClick={() => eliminarVideo(props.datos.id)}
           >
             <img
@@ -97,7 +97,7 @@ const CardVideo = props => {
             />{" "}
             <p>BORRAR</p>
           </span>
-          <span onClick={() => alEditar()} className={styles.borrar_editar}>
+          <span onClick={() => alEditar()} className={styles.editar_card}>
             <img
               className={styles.iconos}
               src={icono_editar}

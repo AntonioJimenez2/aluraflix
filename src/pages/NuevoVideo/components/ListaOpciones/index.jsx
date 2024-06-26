@@ -1,7 +1,10 @@
+import { useContext } from "react";
 import styles from "./ListaOpciones.module.css";
+import { GlobalContext } from "../../../../context/GlobalContext";
 
 const ListaOpciones = (props) => {
-  const categorias = ["Frontend", "Backend", "Innovación y gestión"];
+  //const categorias = ["Frontend", "Backend", "Innovación y gestión"];
+  const {categorias} = useContext(GlobalContext)
 
   const manejarCambio = (e) => {
     props.actualizarCategoria(e.target.value);
@@ -16,8 +19,8 @@ const ListaOpciones = (props) => {
             Seleccione una categoría
           </option>
           {categorias.map((categoria, index) => (
-            <option key={index} value={categoria}>
-              {categoria}
+            <option key={index} value={categoria.titulo}>
+              {categoria.titulo}
             </option>
           ))}
         </select>
