@@ -22,8 +22,7 @@
 @media (max-width: 768px) {
   /* Tus estilos para celulares aquí */
 
-  .contenedor{
-    padding: 0;
+  .contenedor {
+    padding: 35px 15px;
   }
-
 }

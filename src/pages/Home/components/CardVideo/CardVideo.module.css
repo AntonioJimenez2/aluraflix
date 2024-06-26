@@ -6,10 +6,7 @@
   align-items: center;
   border-radius: 15px;
   border: 5px solid #6bd1ff;
- 
 }
-
-
 
 .contenedor_imagen {
   display: flex;
@@ -31,7 +28,7 @@
   object-position: center;
 }
 
-.imagen_video:hover{
+.imagen_video:hover {
   transform: scale(1.02);
 }
 
@@ -47,18 +44,19 @@
   border-top: 5px solid;
 }
 
-.borrar_card, .editar_card {
+.borrar_card,
+.editar_card {
   display: flex;
   align-items: center;
   gap: 10px;
   cursor: pointer;
 }
 
-.borrar_card:hover{
+.borrar_card:hover {
   color: #ff0000;
 }
 
-.editar_card:hover{
+.editar_card:hover {
   color: #00ff00;
 }
 
@@ -77,7 +75,7 @@
   /* Tus estilos para celulares aquí */
   .contenedor_card {
     width: 350px;
-    height: auto;
+    height: 250px;
   }
 
   .contenedor_opciones {
