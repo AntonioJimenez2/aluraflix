@@ -8,17 +8,8 @@ import { GlobalContext } from "../../../../context/GlobalContext";
 const Banner = () => {
   const { videoSeleccionado, videoRef } = useContext(GlobalContext);
 
-  const { titulo, descripcion, categoria, video_url } = videoSeleccionado;
-  let color;
-  if (categoria === "Backend") {
-    color = "#00C86F";
-  } else if (categoria === "Frontend") {
-    color = "#6BD1FF";
-  } else if (categoria === "Innovación y gestión") {
-    color = "#FFBA05";
-  } else {
-    color = "#2271d1"
-  }
+  const { titulo, descripcion, categoria, video_url, color } = videoSeleccionado;
+
 
   return (
     <>
