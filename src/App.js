@@ -11,8 +11,9 @@ function App() {
   return (
     <>
       <GlobalContextProvider>
-        <FormularioContextProvider>
+        
           <BrowserRouter>
+<FormularioContextProvider>
             <Cabecera />
             <Routes>
               <Route path="/" element={<Home />} />
@@ -21,8 +22,9 @@ function App() {
               <Route path="*" element={<Navigate to="/not-found" />} />
             </Routes>
             <Pie />
+</FormularioContextProvider>
           </BrowserRouter>
-        </FormularioContextProvider>
+        
       </GlobalContextProvider>
     </>
   );

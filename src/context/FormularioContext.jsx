@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import { createContext } from "react";
 import { GlobalContext } from "./GlobalContext";
+import { useNavigate } from "react-router-dom";
 
 export const FormularioContext = createContext();
 
@@ -20,6 +21,10 @@ const FormularioContextProvider = ({ children }) => {
     actualizadorVideos,
     setActualizadorVideos,
   } = useContext(GlobalContext);
+
+  //navegar a home al subir nuevo video
+  const navegarAHome = useNavigate()
+
 
   //recibir datos de video nuevo y enviarlo
   const manejarEnvio = (e) => {
@@ -54,6 +59,7 @@ const FormularioContextProvider = ({ children }) => {
       console.log(nuevoVideo);
       setVideos([...videos, nuevoVideo]);
       alLimpiar();
+      navegarAHome("/")
 
       return nuevoVideo;
     } catch (error) {

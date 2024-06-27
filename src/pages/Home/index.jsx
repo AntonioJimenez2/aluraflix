@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import styles from "./Home.module.css";
 import Banner from "./components/Banner";
 import ContenedorCards from "./components/ContenedorCards";
@@ -7,9 +7,11 @@ import ModalEditar from "../../components/ModalEditar";
 
 const Home = () => {
   //videos
-  const { abrirModal, formRef, categorias } = useContext(GlobalContext);
+  const { abrirModal, formRef, categorias, setVideos } = useContext(GlobalContext);
 
-  
+  useEffect(()=>{
+    window.scrollTo(0, 0)
+  }, [setVideos])
 
   return (
     <>
