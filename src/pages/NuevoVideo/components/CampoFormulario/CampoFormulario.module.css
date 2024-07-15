@@ -15,7 +15,8 @@
 .campo_formulario input {
   height: 62px;
   width: 100%;
-  border: 3px solid #262626;
+  border: 3px solid;
+  border-color: #262626;
   background: transparent;
   font-family: "Source Sans 3", sans-serif;
   font-size: 20px;
@@ -54,4 +55,13 @@
   text-align: center;
   color: #ffffff;
   cursor: pointer;
+}
+
+.errores{
+  border-color: red !important;
+  outline-color: red !important;
+}
+
+.errores::placeholder{
+  color: red;
 }

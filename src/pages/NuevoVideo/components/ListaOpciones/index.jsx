@@ -1,20 +1,34 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import styles from "./ListaOpciones.module.css";
 import { GlobalContext } from "../../../../context/GlobalContext";
 
 const ListaOpciones = (props) => {
-  //const categorias = ["Frontend", "Backend", "Innovación y gestión"];
+  const [errores, setErrores] = useState(false);
+  
+  const {actualizarCategoria, valor, required} = props
+
   const {categorias} = useContext(GlobalContext)
 
   const manejarCambio = (e) => {
-    props.actualizarCategoria(e.target.value);
+    actualizarCategoria(e.target.value);
   };
+
+  const verificarSelect = () => {          
+      if(valor.length === 0){
+      setErrores(true); 
+      console.log(errores)
+    } else {
+     setErrores(false); 
+    } 
+  };
+
+  const claseErrores = errores ? styles.errores : "";
 
   return (
     <>
       <div className={styles.contenedor_categorias}>
         <label>Categoria</label>
-        <select value={props.valor} onChange={manejarCambio}>
+        <select value={valor} onChange={manejarCambio} required={required} className={claseErrores} onBlur={verificarSelect} >
           <option value="" disabled defaultValue="" hidden>
             Seleccione una categoría
           </option>

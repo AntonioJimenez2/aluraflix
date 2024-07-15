@@ -30,6 +30,7 @@ const FormularioContextProvider = ({ children }) => {
   const manejarEnvio = (e) => {
     e.preventDefault();
     console.log("Manejar envio");
+   
     let nuevoVideo = {
       titulo,
       imagen_url: imagen,

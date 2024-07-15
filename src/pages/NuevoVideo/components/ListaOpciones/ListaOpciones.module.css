@@ -26,3 +26,9 @@
   text-align: left;
   color: #a5a5a5;
 }
+
+.errores{
+  border-color: red !important;
+  outline-color: red !important;
+  color: red !important;
+}

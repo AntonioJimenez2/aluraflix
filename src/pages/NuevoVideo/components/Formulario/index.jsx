@@ -57,10 +57,11 @@ const Formulario = (props) => {
           <ListaOpciones
             valor={categoria}
             actualizarCategoria={actualizarCategoria}
+            required
           />
           <TextArea
             titulo="Descripción"
-            placeholder="Ingrese la descripción del vídeo..."
+            placeholder="¿De qué se trata este vídeo?..."
             name="descripcion"
             type="text"
             required

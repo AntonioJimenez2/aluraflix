@@ -21,6 +21,15 @@
   gap: 20px;
 }
 
+.errores{
+  border-color: red;
+  outline-color: red;
+}
+
+.errores::placeholder{
+  color: red;
+}
+
 /* Tablet: entre 600px y 1024px */
 @media (min-width: 768x) and (max-width: 1024px) {
   /* Tus estilos para tablet aquí */
