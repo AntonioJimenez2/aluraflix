@@ -25,6 +25,11 @@
 /* Mobile: hasta 600px */
 @media (max-width: 768px) {
     /* Tus estilos para celulares aquí */
+
+    .contenedor{
+        padding-top: 100px;
+    }
+
    .contenedor img{
     width: 90%;
    }
