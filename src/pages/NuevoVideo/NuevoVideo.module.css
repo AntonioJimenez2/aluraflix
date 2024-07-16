@@ -4,4 +4,13 @@
   padding: 50px 0;
   color: #ffffff;
   width: 100%;
+  
+}
+
+@media (max-width: 768px) {
+  /* Tus estilos para celulares aquí */
+  .contenedor_principal {
+    padding-top: 100px;
+   
+  }
 }

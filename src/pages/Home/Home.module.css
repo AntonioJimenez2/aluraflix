@@ -12,6 +12,7 @@
 @media (max-width: 768px) {
   /* Tus estilos para celulares aquí */
   .contenedor_principal {
+    margin-top: 70px;
     margin-bottom: 100px;
   }
 }

@@ -11,6 +11,12 @@
   box-shadow: 0px 5px 29px 0px #2271d1b2;
 }
 
+.pie a{
+  all:unset;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 /* Tablet: entre 600px y 1024px */
 @media (min-width: 768px) and (max-width: 1024px) {
   /* Tus estilos para tablet aquí */
@@ -21,6 +27,14 @@
   /* Tus estilos para celulares aquí */
 
   .pie{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    border-top: none;
+  }
+
+  .pie p{
     display: none;
   }
 
